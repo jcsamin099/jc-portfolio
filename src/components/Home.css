@@ -1,0 +1,133 @@
+/* Existing styles */
+.home-container {
+  padding-block-start: 6.6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* Vertically centers the content */
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #bfe3f3;
+}
+
+.home-h2 {
+  color: #457B9D;
+}
+
+.home-content-left {
+  box-sizing: border-box;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+}
+
+.home-context-left {
+  box-sizing: border-box;
+  width: 85%;
+}
+
+.home-content-right {
+  box-sizing: border-box;
+  max-width: fit-content;
+  width: 100%;
+  background-color: #457B9D;
+  border-radius: 25px;
+}
+
+.home-image {
+  padding-inline-end: 1%;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries */
+
+/* For Mobile (cellphones) */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding-block-start: 5%;
+    font-size: large;
+  }
+
+  .home-content-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-context-left h1 {
+    font-size: 2rem;  
+  }
+
+  .home-content-right {
+    width: 80%;  
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .home-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For Tablet */
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    padding-block-start: 6%;
+    font-size: larger;
+  }
+
+  .home-content-left {
+    width: 80%;
+    text-align: center;
+  }
+
+  .home-context-left h1 {
+    font-size: 2.5rem; 
+  }
+
+  .home-content-right {
+    width: 75%; 
+    margin-top: 20px;
+  }
+
+  .home-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For Desktop */
+@media (min-width: 1025px) {
+  .home-container {
+    flex-direction: row;
+    padding-block-start: 6.6%;
+    font-size: xx-large;
+  }
+
+  .home-content-left {
+    width: 60%;
+    text-align: left;
+  }
+
+  .home-context-left h1 {
+    font-size: 3rem; 
+  }
+
+  .home-content-right {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .home-image {
+    width: 100%;
+    height: auto;
+  }
+}

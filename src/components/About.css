@@ -1,0 +1,66 @@
+/* Existing styles */
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 9%;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .about-content-image {
+    box-sizing: border-box;
+    width: 35rem;
+    padding-block-start: 11%;
+  }
+  
+  .about-h2, .about-p {
+    color: #457B9D;
+  }
+  
+  /* Media Query for devices with screen width less than 768px (Tablets) */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; 
+      padding: 5%;  
+      gap: 5%;  
+      font-size: large; 
+    }
+  
+    .about-content-image {
+      width: 80%; 
+      padding-block-start: 0; 
+      margin-bottom: 2rem; 
+    }
+  
+    .about-h2 {
+      font-size: 1.5rem; 
+    }
+  
+    .about-p {
+      font-size: 1.2rem; 
+    }
+  }
+  
+  /* Media Query for devices with screen width less than 480px (Mobile Devices) */
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 3%; 
+      gap: 3%; 
+      font-size: medium; 
+    }
+  
+    .about-content-image {
+      width: 90%; 
+      margin-bottom: 1rem; 
+    }
+  
+    .about-h2 {
+      font-size: 1.2rem; 
+    }
+  
+    .about-p {
+      font-size: 1rem; 
+    }
+  }
+  

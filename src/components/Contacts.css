@@ -1,0 +1,90 @@
+/* Existing styles */
+.contacts-container {
+    padding: 7%;
+    font-size: xx-large;
+}
+
+.contact-h2 {
+    color: #457B9D;
+}
+
+.contact-images {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align images horizontally */
+    flex-wrap: wrap; /* Allow images to wrap if space is tight */
+}
+
+.contact-image {
+    padding-inline-end: 2.5%;
+    width: 35.5%; 
+}
+
+.contact-image:hover {
+    padding-inline-end: 2.5%;
+    width: 35.5%; 
+    transform: scale(1.2);
+}
+
+/* Media Query for devices with screen width less than 768px (Tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .contacts-container {
+        padding: 5%; 
+        font-size: large; 
+    }
+
+    .contact-h2 {
+        font-size: 1.5rem; 
+    }
+
+    .contact-images {
+        justify-content: center; 
+    }
+
+    .contact-image {
+        width: 15%; 
+        margin-bottom: 1rem; 
+    }
+}
+@media (max-width: 768px) {
+    .contacts-container {
+        padding: 5%; 
+        font-size: large; 
+    }
+
+    .contact-h2 {
+        font-size: 1.5rem; 
+    }
+
+    .contact-images {
+        justify-content: center; 
+    }
+
+    .contact-image {
+        width: 33.5%; 
+        margin-bottom: 1rem; 
+        
+    }
+}
+
+/* Media Query for devices with screen width less than 480px (Mobile Devices) */
+@media (max-width: 480px) {
+    .contacts-container {
+        padding: 3%; 
+        font-size: medium; 
+    }
+
+    .contact-h2 {
+        font-size: 1.2rem; 
+    }
+
+    .contact-images {
+        justify-content: center; 
+    }
+
+    .contact-image {
+        width: 33.5%; 
+        margin-bottom: 1rem; 
+    }
+}
